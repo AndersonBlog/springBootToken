@@ -4,6 +4,7 @@ import com.wu.springBootToken.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Component;
 
 /**
  * 描述:
@@ -12,6 +13,7 @@ import org.apache.ibatis.annotations.Select;
  * @create 2019-10-16 2:00 PM
  */
 @Mapper
+@Component
 public interface UserMapper {
 
     User findByUserNameAndPasswd(String username, String userpasswd);
